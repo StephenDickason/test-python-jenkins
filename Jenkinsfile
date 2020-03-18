@@ -4,7 +4,7 @@ pipeline {
     stage('test') {
       agent any
       steps {
-        sh 'pytest code/add2.py'
+        sh 'pytest code/python/add2.py'
       }
     }
 
