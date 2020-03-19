@@ -4,7 +4,7 @@ pipeline {
     stage('test') {
       agent { dockerfile true }
       steps {
-        sh 'pytest code/add2.py'
+        sh 'pytest add2.py'
       }
     }
   }
