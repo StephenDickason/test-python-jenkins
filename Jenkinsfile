@@ -7,12 +7,7 @@ pipeline {
         }
       }
       steps {
-        sh 'cd node/simple-node-js-react-npm-app-master/'
-        sh 'ls'
-        sh 'pwd'
-        sh 'cd node/simple-node-js-react-npm-app-master/ && ls'
-        sh 'ls'
-        sh 'npm install'
+        sh 'cd node/simple-node-js-react-npm-app-master/ && npm install'
       }
     }
     stage('test') {
