@@ -6,7 +6,7 @@ pipeline {
       steps {
         sh 'pwd'
         sh 'ls'
-        sh 'pytest add2.py'
+        sh 'pytest python/add2.py'
       }
     }
   }
