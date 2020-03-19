@@ -8,6 +8,8 @@ pipeline {
       }
       steps {
         sh 'cd node/simple-node-js-react-npm-app-master/'
+        sh 'ls'
+        sh 'pwd'
         sh 'npm install'
       }
     }
