@@ -7,7 +7,7 @@ pipeline {
         }
       }
       steps {
-        sh 'cd node/simple-node-js-react-npm-app-master/ && chown -R 501:20 "/.npm" && npm install'
+        sh 'cd node/simple-node-js-react-npm-app-master/ && chown -R 501:20 "~/.npm" && npm install'
       }
     }
     stage('test') {
