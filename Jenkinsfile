@@ -2,14 +2,10 @@ pipeline {
   agent any
   stages {
     stage('test') {
-      agent {
-        docker { dockerfile true }
-
-      }
+      agent { dockerfile true }
       steps {
         sh 'pytest code/add2.py'
       }
     }
-
   }
 }
