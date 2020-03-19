@@ -7,7 +7,7 @@ pipeline {
         }
       }
       steps {
-        sh 'cd node/simple-node-js-react-npm-app-master/ && sudo npm install'
+        sh 'cd node/simple-node-js-react-npm-app-master/ && npm install'
       }
     }
     stage('test') {
