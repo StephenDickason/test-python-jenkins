@@ -2,9 +2,15 @@ pipeline {
   agent any
   stages {
     stage('test') {
-      agent any
+      agent {
+        docker {
+          image 'python:3.6-stretch'
+          args '-v code/python:code/'
+        }
+
+      }
       steps {
-        sh 'pytest code/python/add2.py'
+        sh 'pytest code/add2.py'
       }
     }
 
