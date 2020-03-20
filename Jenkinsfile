@@ -22,7 +22,7 @@ pipeline {
         HOME = '.'
       }
       steps {
-        sh 'cd node/ && npm test'
+        sh 'cd node/ && ng test --watch=false'
       }
     }
     stage('python-test') {
