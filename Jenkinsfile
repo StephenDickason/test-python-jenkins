@@ -6,8 +6,10 @@ pipeline {
         filename 'Dockerfile-js'
         }
       }
+      environment {
+        HOME = '.'
+      }
       steps {
-        sh 'cd node/ && chown -R 501:20 "/.npm"'
         sh 'cd node/ && npm install'
       }
     }
