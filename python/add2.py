@@ -2,7 +2,7 @@ import os
 import sys
 
 def add2(num1, num2):
-    result = num1 - num2
+    result = num1 + num2
     return result
 
 def displayResult(num):
