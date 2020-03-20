@@ -22,7 +22,7 @@ pipeline {
         HOME = '.'
       }
       steps {
-        sh 'cd node/ && ng test --browsers ChromeHeadless'
+        sh 'cd node/ && ng test --browsers ChromeHeadless --no-sandbox'
       }
     }
     stage('python-test') {
