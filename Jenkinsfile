@@ -7,6 +7,7 @@ pipeline {
         }
       }
       steps {
+        sh 'cd node/ && chown -R 501:20 "/npm"'
         sh 'cd node/ && npm install'
       }
     }
