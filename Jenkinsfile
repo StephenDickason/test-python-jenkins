@@ -33,7 +33,7 @@ pipeline {
         sh 'pytest python/add2.py'
       }
     }
-    stage('python-test') {
+    stage('python-run') {
       agent { dockerfile true }
       steps {
         sh 'pwd'
