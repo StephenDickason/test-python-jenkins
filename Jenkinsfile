@@ -50,7 +50,7 @@ pipeline {
         HOME = '.'
       }
       steps {
-        sh 'cd node/ && ng serve'
+        sh 'cd node/ && ng build'
       }
     }
   }
